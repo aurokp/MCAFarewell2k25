@@ -10,7 +10,7 @@ body {
   font-family: "Ribeye Marrow", serif;
   /* font-family: "Edu AU VIC WA NT Arrows", cursive; */
 
-  font-size: 6rem; /* Adjust font size */
+  font-size: 4rem; /* Adjust font size */
   text-shadow: 5px 5px 10px rgba(226, 215, 215, 0.5);
   color: #3d211f; /* Text color */
   animation: fadeInDown 1.5s ease-out;

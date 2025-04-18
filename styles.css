@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: white;
+  scroll-behavior: smooth;
+
+}
+.animated-title {
+  font-family: 'Great Vibes', cursive; /* Replace 'bubbles' with a similar font */
+  font-size: 6rem; /* Adjust font size */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1.5s ease-out;
+}
+/* .title {
+  font-size: 10rem;
+  color: #e12727;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+#when-where{
+  background: #0ce7e7;
+  background: linear-gradient(122deg, rgb(241, 104, 7) 0%, rgb(94, 39, 94) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.memories{
+  background: #e70c0c;
+  background: linear-gradient(122deg, rgba(231, 12, 12, 1) 0%, rgba(255, 0, 255, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.tribute {
+  background-color: #f4a261; /* Light orange */
+  background: linear-gradient(122deg, #f4a261 0%, #e76f51 50%, #2a9d8f 100%);
+}
+
+.farewell{
+  background-color: #264653; /* Dark teal */
+  background: linear-gradient(122deg, #264653 0%, #2a9d8f 50%, #e9c46a 100%);
+}
+/* Welcome Section Styling */
+.welcome {
+  background: linear-gradient(135deg, #db8181, #db8181, #db8181);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Animated Title */
+
+/* Animated Subtitle */
+.animated-subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Decorative Photo */
+.decorated-photo {
+  margin-top: 30px;
+  max-width: 80%;
+  border: 5px solid white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 1.5s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.gallery img {
+  width: 200%; /* Change this to your desired width */
+  max-width: 300px; /* Optional: limit how big it can get */
+  
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+.masonry-gallery {
+  column-count: 2;
+  column-gap: 15px;
+  margin-top: 25px;
+}
+
+.masonry-gallery img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.masonry-gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 768px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+}
+
+
+.content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.section-photo {
+  margin-top: 25px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+/* Gate Image Styling */
+.gate-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Add spacing below the image */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
+}
+
+/* Scroll Button Styling */
+.scroll-btn {
+  display: inline-block;
+  font-size: 2rem; /* Adjust font size */
+  padding: 0.5rem 1rem; /* Add padding for a larger clickable area */
+  border-radius: 50%; /* Make it circular */
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.7); /* Slight transparency */
+  color: #ff6a5e; /* Icon color */
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: bounce 2s infinite; /* Add bounce animation */
+}
+
+/* Hover Effect */
+.scroll-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Less transparent on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up slightly */
+  }
+}
+
+.description {
+  font-size: 1.1rem;
+  margin: 20px auto;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.event-info {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle, .description, .event-info {
+    font-size: 1rem;
+  }
+
+  .section-photo {
+    max-width: 100%;
+  }
+
+  .event-info {
+    padding: 15px;
+  }
+}
+/* Initial state for sections (hidden and scaled down) */
+.section {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When the section becomes visible */
+.section.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+#content-farewell{
+  background: #264653;
+  background: linear-gradient(122deg, #264653 0%, #2a9d8f 50%, #e9c46a 100%);
+  color: #fff;
+  border-radius: 12px;
+  font-size: x-large;
+}

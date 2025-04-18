@@ -6,9 +6,12 @@ body {
 
 }
 .animated-title {
-  font-family: 'Great Vibes', cursive; /* Replace 'bubbles' with a similar font */
+  font-family: "Henny Penny", system-ui;
+  /* font-family: "Edu AU VIC WA NT Arrows", cursive; */
+
   font-size: 6rem; /* Adjust font size */
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 10px rgba(226, 215, 215, 0.5);
+  color: #3d211f; /* Text color */
   animation: fadeInDown 1.5s ease-out;
 }
 /* .title {

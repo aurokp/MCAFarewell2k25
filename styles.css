@@ -39,11 +39,11 @@ body {
 }
 /* Welcome Section Styling */
 .welcome {
-  background: linear-gradient(135deg, #db8181, #db8181, #db8181);
-  color: white;
+  background: linear-gradient(90deg, #FFD700, #FF7F50, #DC143C);  color: white;
   text-align: center;
   padding: 60px 20px;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+  
 }
 
 /* Animated Title */

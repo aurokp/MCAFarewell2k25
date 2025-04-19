@@ -15,6 +15,31 @@ body {
   color: #3d211f; /* Text color */
   animation: fadeInDown 1.5s ease-out;
 }
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Centers the text */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: none; /* Initially, no animation */
+}
+
+/* Active Typewriter Animation */
+.typewriter.active {
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Cursor Blink Animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
 /* .title {
   font-size: 10rem;
   color: #e12727;

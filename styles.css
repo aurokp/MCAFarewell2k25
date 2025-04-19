@@ -32,6 +32,7 @@ body {
 .tribute {
   background-color: #f4a261; /* Light orange */
   background: linear-gradient(122deg, #f4a261 0%, #e76f51 50%, #2a9d8f 100%);
+  color:black;
 }
 
 .farewell{

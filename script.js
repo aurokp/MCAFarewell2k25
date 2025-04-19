@@ -16,3 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
   
     sections.forEach((section) => observer.observe(section));
   });
+document.addEventListener("DOMContentLoaded", () => {
+    const typewriters = document.querySelectorAll(".typewriter");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active"); // Trigger the animation
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+  
+    typewriters.forEach((typewriter) => observer.observe(typewriter));
+  });
